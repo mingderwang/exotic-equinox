@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PopoverDemo from '../components/PopoverDemo.jsx';
+import MenubarDemo from '../components/MenubarDemo.jsx';
+---
+<Layout title="Welcome to Astro.">
+ <PopoverDemo client:load/> 
+ <MenubarDemo client:load/>
+</Layout>
