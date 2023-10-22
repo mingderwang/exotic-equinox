@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import MenubarDemo from '../components/MenubarDemo.jsx';
 ---
 
 <!doctype html>
@@ -16,6 +17,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<MenubarDemo client:load/>
 		<slot />
 	</body>
 </html>
